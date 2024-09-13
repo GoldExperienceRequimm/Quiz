@@ -83,7 +83,7 @@ function QuizProvider({ children }) {
   );
 
   useEffect(function () {
-    fetch("https://goldexperiencerequimm.github.io/Api/questions")
+    fetch("//goldexperiencerequimm.github.io/Api/questions.json")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
