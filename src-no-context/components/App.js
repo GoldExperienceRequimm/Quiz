@@ -101,7 +101,7 @@ export default function App() {
   );
 
   useEffect(function () {
-    fetch("http://localhost:9000/questions")
+    fetch("https://goldexperiencerequimm.github.io/Api/questions.json")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
